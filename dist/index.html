@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>Assist Seminar</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- 検索エンジンにインデックスしないよう指示 -->
+    <meta name="googlebot" content="noindex, nofollow" />
+    <!-- Googleのクローラーにインデックスしないよう指示 -->
+    <meta name="msnbot" content="noindex, nofollow" />
+    <!-- Bingのクローラーにインデックスしないよう指示 -->
+    <meta name="slurp" content="noindex, nofollow" />
+    <!-- Yahooのクローラーにインデックスしないよう指示 -->
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon.png" />
+    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    
+  </head>
+
+  <body>
+    <header class="l-header p-header" id="header">
+      <div class="p-header__wrapper">
+        <h1 class="p-header__logo">
+          <a href="#" class="p-header__logo-text">
+            ASSIST seminar
+          </a>
+        </h1>
+        <div class="p-header__hamburger-wrapper">
+          <button class="p-header__hamburger js-hamburger">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="p-header__nav js-drawer">
+          <ul class="p-header__nav-list">
+            <li class="p-header__nav-item">
+              <a class="p-header__nav-link js-accordion">
+                <span>開催予定のセミナー</span>
+                <span class="p-header__nav-btn"></span>
+              </a>
+              <ul class="p-header__dropmenu">
+                <li class="p-header__dropmenu-item">
+                  <a href="#schedule" class="p-header__dropmenu-link">
+                    不動産セミナー
+                  </a>
+                </li>
+                <li class="p-header__dropmenu-item">
+                  <a href="#schedule" class="p-header__dropmenu-link">
+                    投資信託セミナー
+                  </a>
+                </li>
+                <li class="p-header__dropmenu-item">
+                  <a href="#schedule" class="p-header__dropmenu-link">
+                    仮想通貨セミナー
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#" class="p-header__nav-link">
+                <span>資産運用コラム</span>
+                <span class="p-header__nav-btn"></span>
+              </a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#" class="p-header__nav-link">
+                <span>アーカイブ動画</span>
+                <span class="p-header__nav-btn"></span>
+              </a>
+            </li>
+            <li class="p-header__nav-item p-header__info">
+              <a href="#contact" class="p-header__info-btn">
+                <div class="p-header__info-image u-desktop">
+                  <img
+                    src="./images/header/header-info-logo.png"
+                    alt="メールアイコン"
+                    width="28"
+                  />
+                </div>
+                <span>お問い合わせ</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 追従ボタン btn01 -->
+    <div class="p-btn01 l-btn01 p-fadein-btn js-follow-btn">
+      <a href="#contact" class="c-btn01">
+        予約はこちら
+        <span></span>
+      </a>
+    </div>
+
+    <!-- 予約ボタン btn02 -->
+    <div class="p-btn02 l-btn02 p-fadeout-btn js-follow-btn">
+      <a href="#contact" class="c-btn02">
+        <div class="c-btn02__image">
+          <picture>
+            <source
+              srcset="./images/btn-icon/calender-icon-pc.webp"
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source srcset="./images/btn-icon/calender-icon-sp.webp" />
+            <source
+              srcset="./images/btn-icon/calender-icon-pc.png"
+              type="image/png"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/btn-icon/calender-icon-sp.png"
+              alt="カレンダー"
+            />
+          </picture>
+        </div>
+        <div class="c-btn02__text">
+          予約はこちら
+          <span></span>
+        </div>
+      </a>
+    </div>
+
+    <!-- First View -->
+    <section class="p-fv">
+      <div class="p-fv__wrapper">
+        <!-- main title -->
+        <div class="p-fv__copy">
+          <h3 class="p-fv__copy01">初心者からはじめる</h3>
+          <h2 class="p-fv__copy02">不動産投資セミナー</h2>
+        </div>
+
+        <!-- fv-circle -->
+        <div class="p-circle l-circle">
+          <div class="c-circle c-circle--midium">
+            <p class="c-circle__text">物件数<br />業界<br />トップクラス</p>
+          </div>
+          <div class="c-circle c-circle--midium">
+            <p class="c-circle__text c-circle__text--high">
+              初月から<br />利益がでる
+            </p>
+          </div>
+          <div class="c-circle c-circle--midium">
+            <p class="c-circle__text">賃貸管理<br />手数料<br />永久無料</p>
+          </div>
+        </div>
+
+        <!-- btn03 -->
+        <div class="p-btn03 l-btn03">
+          <a href="#" class="c-btn03">
+            <span class="c-btn03__text">無料セミナー日程を確認する</span>
+            <span class="c-btn03__circle"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn セミナーで学べること -->
+    <section class="p-learn l-learn" id="learn">
+      <div class="p-learn__wrapper l-inner">
+        <!-- section-title -->
+        <h2 class="c-title c-title--learn p-fadeIn__bottom js-fadeIn">
+          <span class="c-title__en">you can learn</span>
+          <span class="c-title__text">セミナーで学べること</span>
+        </h2>
+
+        <!-- card01 -->
+        <ul class="p-card01 l-card01">
+          <li class="c-card01">
+            <div class="c-card01__image">
+              <picture>
+                <source
+                  srcset="./images/learn/pc/learn01-pc.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  width="160"
+                  height="118"
+                />
+                <source
+                  srcset="./images/learn/sp/learn01-sp.webp"
+                  type="image/webp"
+                  width="101"
+                  height="75"
+                />
+                <source
+                  srcset="./images/learn/pc/learn01-pc.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  width="160"
+                  height="118"
+                />
+                <img
+                  src="./images/learn/sp/learn01-sp.png"
+                  alt="初心者もよくわかる不動産投資の仕組み"
+                  width="101"
+                  height="75"
+                  alt="不動産投資の仕組みのイラスト"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <p class="c-card01__text">
+              初心者もよくわかる<br />「不動産投資の仕組み」
+            </p>
+          </li>
+          <li class="c-card01 c-card01--learn02">
+            <div class="c-card01__image c-card01__image--learn02">
+              <picture>
+                <source
+                  srcset="./images/learn/pc/learn02-pc.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  width="145"
+                  height="126"
+                />
+                <source
+                  srcset="./images/learn/sp/learn02-sp.webp"
+                  type="image/webp"
+                  width="93"
+                  height="81"
+                />
+                <source
+                  srcset="./images/learn/pc/learn02-pc.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  width="145"
+                  height="126"
+                />
+                <img
+                  src="./images/learn/sp/learn02-sp.png"
+                  alt="不動産投資ならではのリスクヘッジ法"
+                  width="93"
+                  height="81"
+                  alt="リスクヘッジ法のイラスト"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <p class="c-card01__text">
+              不動産投資ならではの<br />「リスクヘッジ法」
+            </p>
+          </li>
+          <li class="c-card01 c-card01--learn03">
+            <div class="c-card01__image c-card01__image--learn03">
+              <picture>
+                <source
+                  srcset="./images/learn/pc/learn03-pc.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  width="164"
+                  height="121"
+                />
+                <source
+                  srcset="./images/learn/sp/learn03-sp.webp"
+                  type="image/webp"
+                  width="101"
+                  height="74"
+                />
+                <source
+                  srcset="./images/learn/pc/learn03-pc.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  width="164"
+                  height="121"
+                />
+                <img
+                  src="./images/learn/sp/learn03-sp.png"
+                  alt="中古・新築の違いとは？物件タイプ比較"
+                  width="101"
+                  height="74"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <p class="c-card01__text">
+              中古・新築の違いとは？<br />「物件タイプ比較」
+            </p>
+          </li>
+          <li class="c-card01 c-card01--learn04">
+            <div class="c-card01__image c-card01__image--learn04">
+              <picture>
+                <source
+                  srcset="./images/learn/pc/learn04-pc.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  width="132"
+                  height="138"
+                />
+                <source
+                  srcset="./images/learn/sp/learn04-sp.webp"
+                  type="image/webp"
+                  width="85"
+                  height="88"
+                />
+                <source
+                  srcset="./images/learn/pc/learn04-pc.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  width="132"
+                  height="138"
+                />
+                <img
+                  src="./images/learn/sp/learn04-sp.png"
+                  alt="プロパティエージェントの独自サービス"
+                  width="85"
+                  height="88"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <p class="c-card01__text">
+              プロパティエージェントの<br />「独自サービス」
+            </p>
+          </li>
+        </ul>
+        <div class="p-learn__copy">
+          <h3 class="p-learn__copy-text">
+            <p class="p-learn__copy-text01">
+              参加者満足度
+              <span class="p-learn__copy-num">95</span>
+              以上
+            </p>
+            <p class="p-learn__copy-text02">人気セミナーです！</p>
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner01 -->
+    <aside class="p-banner01">
+      <p class="p-banner01__text">
+        参加者全員に<span class="space">「不動産投資ガイド」</span><br class="u-mobile">
+        <span class="present">無料プレゼント！</span>
+      </p>
+      <!-- btn03 -->
+      <div class="p-btn03 l-btn03 l-btn03--banner01">
+        <a href="#" class="c-btn03">
+          <span class="c-btn03__text">無料セミナー日程を確認する</span>
+          <span class="c-btn03__circle"></span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Participant セミナー参加者ってどんな人？ -->
+    <section class="p-participant l-participant" id="participant">
+      <div class="p-participant__wrapper l-inner">
+        <!-- section-title -->
+        <h2 class="c-title c-title--participant p-fadeIn__bottom js-fadeIn">
+          <span class="c-title__en">participant</span>
+          <span class="c-title__text">セミナー参加者ってどんな人？</span>
+        </h2>
+        <!-- graph01 -->
+        <div class="p-graph01">
+          <div class="c-graph01__wrapper">
+            <div class="c-graph01">
+              年齢
+              <span class="c-graph01__label c-graph01__label--orange">
+                <span class="c-graph__low">30代</span>
+                <span class="c-graph__percent">54</span>
+              </span>
+              <span class="c-graph01__label c-graph01__label--blue">
+                <span class="c-graph__high">40代</span>
+                <span class="c-graph__percent">30</span>
+              </span>
+            </div>
+            <p class="c-graph01__text">30〜40代で<br />80%以上！</p>
+          </div>
+          <div class="c-graph01__wrapper">
+            <div class="c-graph01 c-graph01--income">
+              年収
+              <span
+                class="c-graph01__label c-graph01__label--orange c-graph01__label--income"
+              >
+                <span class="c-graph__low">600〜799万</span>
+                <span class="c-graph__percent">33</span>
+              </span>
+              <span
+                class="c-graph01__label c-graph01__label--blue c-graph01__label--income"
+              >
+                <span class="c-graph__high">800〜999万</span>
+                <span class="c-graph__percent">19</span>
+              </span>
+            </div>
+            <p class="c-graph01__text">年収600〜799万層が<br />最も多いです！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voice お客さまの声 -->
+    <section class="p-voice l-voice" id="voice">
+      <div class="p-voice__wrapper">
+        <h2 class="c-title c-title--voice p-fadeIn__bottom js-fadeIn">
+          <span class="c-title__en">voice</span>
+          <span class="c-title__text">お客さまの声</span>
+        </h2>
+        <!-- c-card02 -->
+        <div class="p-card02 swiper">
+          <div class="p-card02__wrapper swiper-wrapper">
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice01-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice01-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice01-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice01-sp.png"
+                    width="213"
+                    height="142"
+                    alt="男性社員の写真"
+                  />
+                </picture>
+                <span class="c-card02__number">01</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice02-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice02-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice02-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice02-sp.png"
+                    width="213"
+                    height="142"
+                    alt="女性社員の写真"
+                  />
+                </picture>
+                <span class="c-card02__number">02</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice03-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice03-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice03-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice03-sp.png"
+                    width="213"
+                    height="142"
+                    alt="男性社員の写真"
+                  />
+                </picture>
+                <span class="c-card02__number">03</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice04-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice04-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice04-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice04-sp.png"
+                    width="213"
+                    height="142"
+                    alt="男性社員の写真"
+                  />
+                </picture>
+                <span class="c-card02__number">04</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice05-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice05-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice05-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice05-sp.png"
+                    width="213"
+                    height="142"
+                    alt="女性社員の写真"
+                  />
+                </picture>
+                <span class="c-card02__number">05</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice06-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice06-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice06-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice06-sp.png"
+                    width="213"
+                    height="142"
+                    alt="男性社員の写真"
+                  />
+                </picture>
+                <span class="c-card02__number">06</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice01-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice01-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice01-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice01-sp.png"
+                    alt="男性社員の写真"
+                    width="213"
+                    height="142"
+                  />
+                </picture>
+                <span class="c-card02__number">07</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice02-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice02-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice02-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice02-sp.png"
+                    alt="女性社員の写真"
+                    width="213"
+                    height="142"
+                  />
+                </picture>
+                <span class="c-card02__number">08</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice03-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice03-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice03-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice03-sp.png"
+                    alt="男性社員の写真"
+                    width="213"
+                    height="142"
+                  />
+                </picture>
+                <span class="c-card02__number">09</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice04-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice04-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice04-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice04-sp.png"
+                    alt="男性社員の写真"
+                    width="213"
+                    height="142"
+                  />
+                </picture>
+                <span class="c-card02__number">10</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice05-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice05-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice05-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice05-sp.png"
+                    alt="女性社員の写真"
+                    width="213"
+                    height="142"
+                  />
+                </picture>
+                <span class="c-card02__number">11</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card02 swiper-slide">
+              <div class="c-card02__image">
+                <picture>
+                  <source
+                    srcset="./images/voice/sp/voice06-sp.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <source
+                    srcset="./images/voice/sp/voice06-sp.webp"
+                    type="image/webp"
+                    width="213"
+                    height="142"
+                  />
+                  <source
+                    srcset="./images/voice/pc/voice06-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="230"
+                    height="153"
+                  />
+                  <img
+                    src="./images/voice/sp/voice06-sp.png"
+                    alt="男性社員の写真"
+                    width="213"
+                    height="142"
+                  />
+                </picture>
+                <span class="c-card02__number">12</span>
+              </div>
+              <div class="c-card02__content">
+                <p class="c-card02__title">20代男性 会社員</p>
+                <p class="c-card02__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reason 私たちが選ばれる理由 -->
+    <section class="p-reason l-reason" id="reason">
+      <div class="p-reason__wrapper l-inner">
+        <!-- section-title -->
+        <h2 class="c-title c-title--reason p-fadeIn__bottom js-fadeIn">
+          <span class="c-title__en">reason</span>
+          <span class="c-title__text">私たちが選ばれる理由</span>
+        </h2>
+        <!-- c-card03 -->
+        <div class="p-card03">
+          <div class="c-card03">
+            <div class="c-card03__content">
+              <div class="c-card03__header">
+                <span class="c-card03__number"></span>
+                <h3 class="c-card03__title">
+                  営業電話しない！<br>紹介・リピート率で運用
+                </h3>
+              </div>
+              <p class="c-card03__text">
+                ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+              </p>
+            </div>
+            <div class="c-card03__image">
+              <picture>
+                <source
+                  srcset="./images/reason/pc/reason01-pc.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  width="359"
+                  height="253"
+                />
+                <source
+                  srcset="./images/reason/sp/reason01-sp.webp"
+                  type="image/webp"
+                  width="325"
+                  height="229"
+                />
+                <source
+                  srcset="./images/reason/pc/reason01-pc.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  width="359"
+                  height="253"
+                />
+                <img
+                  src="./images/reason/sp/reason01-sp.png"
+                  alt="営業電話しない！紹介・リピート率で運用"
+                  width="325"
+                  height="229"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="c-card03">
+            <div class="c-card03__content">
+              <div class="c-card03__header">
+                <span class="c-card03__number"></span>
+                <h3 class="c-card03__title">
+                  業界No,1！<br>99%以上をこえる<br class="u-mobile">入居率！
+                </h3>
+              </div>
+              <p class="c-card03__text">
+                ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+              </p>
+            </div>
+            <div class="c-card03__image">
+              <picture>
+                <source
+                  srcset="./images/reason/pc/reason02-pc.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  width="359"
+                  height="253"
+                />
+                <source
+                  srcset="./images/reason/sp/reason02-sp.webp"
+                  type="image/webp"
+                  width="325"
+                  height="229"
+                />
+                <source
+                  srcset="./images/reason/pc/reason02-pc.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  width="359"
+                  height="253"
+                />
+                <img
+                  src="./images/reason/sp/reason02-sp.png"
+                  alt="業界No,1！99%以上をこえる入居率！"
+                  width="325"
+                  height="229"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="c-card03">
+            <div class="c-card03__content">
+              <div class="c-card03__header">
+                <span class="c-card03__number"></span>
+                <h3 class="c-card03__title">
+                  販売だけじゃない！<br>開発から管理まで<br class="u-mobile">ワンストップ提供
+                </h3>
+              </div>
+              <p class="c-card03__text">
+                ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+              </p>
+            </div>
+            <div class="c-card03__image">
+              <picture>
+                <source
+                  srcset="./images/reason/pc/reason03-pc.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  width="359"
+                  height="253"
+                />
+                <source
+                  srcset="./images/reason/sp/reason03-sp.webp"
+                  type="image/webp"
+                  width="325"
+                  height="229"
+                />
+                <source
+                  srcset="./images/reason/pc/reason03-pc.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  width="359"
+                  height="253"
+                />
+                <img
+                  src="./images/reason/sp/reason03-sp.png"
+                  alt="販売だけじゃない！開発から管理までワンストップ提供"
+                  width="325"
+                  height="229"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner01 -->
+    <aside class="p-banner02">
+      <p class="p-banner01__text p-banner02__text">
+        参加者全員に<span class="space">「不動産投資ガイド」</span><br class="u-mobile">
+        <span class="present">無料プレゼント！</span>
+      </p>
+      <!-- btn03 -->
+      <div class="p-btn03 l-btn03 l-btn03--banner01">
+        <a href="#" class="c-btn03">
+          <span class="c-btn03__text">無料セミナー日程を確認する</span>
+          <span class="c-btn03__circle"></span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Flow -->
+    <section class="p-flow l-flow" id="flow">
+      <div class="p-flow__wrapper l-inner">
+        <!-- section-title -->
+        <h2 class="c-title c-title--flow p-fadeIn__bottom js-fadeIn">
+          <span class="c-title__en">flow</span>
+          <span class="c-title__text">セミナー受講までの流れ</span>
+        </h2>
+        <!-- c-card04 -->
+        <div class="p-card04">
+          <div class="c-card04">
+            <div class="c-card04__image-wrapper">
+              <div class="c-card04__image">
+                <picture>
+                  <source
+                    srcset="./images/flow/pc/flow01-pc.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="74"
+                    height="109"
+                  />
+                  <source
+                    srcset="./images/flow/sp/flow01-sp.webp"
+                    type="image/webp"
+                    width="46"
+                    height="69"
+                  />
+                  <source
+                    srcset="./images/flow/pc/flow01-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="74"
+                    height="109"
+                  />
+                  <img
+                    src="./images/flow/sp/flow01-sp.png"
+                    alt="お申し込み"
+                    width="46"
+                    height="69"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="c-card04__content">
+              <p class="c-card04__title">
+                お申し込み
+              </p>
+              <p class="c-card04__text">
+                ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここ
+              </p>
+            </div>
+          </div>
+          <div class="c-card04">
+            <div class="c-card04__image-wrapper">
+              <div class="c-card04__image c-card04__image--quote">
+                <picture>
+                  <source
+                    srcset="./images/flow/pc/flow02-pc.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="76"
+                    height="51"
+                  />
+                  <source
+                    srcset="./images/flow/sp/flow02-sp.webp"
+                    type="image/webp"
+                    width="48"
+                    height="32"
+                  />
+                  <source
+                    srcset="./images/flow/pc/flow02-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="76"
+                    height="51"
+                  />
+                  <img
+                    src="./images/flow/sp/flow02-sp.png"
+                    alt="お見積り"
+                    width="48"
+                    height="32"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="c-card04__content">
+              <p class="c-card04__title">
+                お見積もり
+              </p>
+              <p class="c-card04__text">
+                ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここ
+              </p>
+            </div>
+          </div>
+          <div class="c-card04">
+            <div class="c-card04__image-wrapper">
+              <div class="c-card04__image c-card04__image--application">
+                <picture>
+                  <source
+                    srcset="./images/flow/pc/flow03-pc.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="93"
+                    height="78"
+                  />
+                  <source
+                    srcset="./images/flow/sp/flow03-sp.webp"
+                    type="image/webp"
+                    width="58"
+                    height="48"
+                  />
+                  <source
+                    srcset="./images/flow/pc/flow03-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="93"
+                    height="78"
+                  />
+                  <img
+                    src="./images/flow/sp/flow03-sp.png"
+                    alt="申請完了"
+                    width="58"
+                    height="48"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="c-card04__content">
+              <p class="c-card04__title">
+                申請完了
+              </p>
+              <p class="c-card04__text">
+                ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここ
+              </p>
+            </div>
+          </div>
+          <div class="c-card04">
+            <div class="c-card04__image-wrapper">
+              <div class="c-card04__image c-card04__image--received">
+                <picture>
+                  <source
+                    srcset="./images/flow/pc/flow04-pc.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="115"
+                    height="60"
+                  />
+                  <source
+                    srcset="./images/flow/sp/flow04-sp.webp"
+                    type="image/webp"
+                    width="72"
+                    height="38"
+                  />
+                  <source
+                    srcset="./images/flow/pc/flow04-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="115"
+                    height="60"
+                  />
+                  <img
+                    src="./images/flow/sp/flow04-sp.png"
+                    alt="入金確認"
+                    width="72"
+                    height="38"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="c-card04__content">
+              <p class="c-card04__title">
+                入金確認
+              </p>
+              <p class="c-card04__text">
+                ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここ
+              </p>
+            </div>
+          </div>
+          <div class="c-card04">
+            <div class="c-card04__image-wrapper">
+              <div class="c-card04__image c-card04__image--training">
+                <picture>
+                  <source
+                    srcset="./images/flow/pc/flow05-pc.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="85"
+                    height="85"
+                  />
+                  <source
+                    srcset="./images/flow/sp/flow05-sp.webp"
+                    type="image/webp"
+                    width="53"
+                    height="53"
+                  />
+                  <source
+                    srcset="./images/flow/pc/flow05-pc.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    width="85"
+                    height="85"
+                  />
+                  <img
+                    src="./images/flow/sp/flow05-sp.png"
+                    alt="研修スタート"
+                    width="53"
+                    height="53"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="c-card04__content">
+              <p class="c-card04__title">
+                研修スタート
+              </p>
+              <p class="c-card04__text">
+                ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule 無料セミナースケジュール -->
+    <section class="p-schedule l-schedule" id="schedule">
+      <div class="p-schedule__wrapper l-inner">
+        <!-- section-title -->
+        <h2 class="c-title c-title--schedule p-fadeIn__bottom js-fadeIn">
+          <span class="c-title__en">schedule</span>
+          <span class="c-title__text">無料セミナースケジュール</span>
+        </h2>
+        <!-- c-card05__01 -->
+        <div class="p-card05">
+          <div class="c-card05">
+            <div class="c-card05__wrapper">
+              <div class="c-card05__schedule">
+                <p class="c-card05__date">
+                  <time datetime="2025-05-20">
+                    5/20(月)
+                  </time>
+                </p>
+                <p class="c-card05__time">
+                  <time datetime="2025-05-20T13:30">
+                    13:30〜<br>15:30
+                  </time>
+                </p>
+              </div>
+              <div class="c-card05__content">
+                <h3 class="c-card__title">
+                  不動産投資を始めるために<br class="u-mobile">知っておくべきこと<br>〜初心者・女性オーナー様に<br class="u-mobile">大人気！〜
+                </h3>
+                <p class="c-card05__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card05__btn-list">
+              <a href="#" class="c-card05__btn">
+                お申し込み
+              </a>
+              <a href="#" class="c-card05__btn c-card05__btn--detail">
+                詳　細
+              </a>
+            </div>
+          </div>
+
+          <!-- c-card05__02 -->
+          <div class="c-card05">
+            <div class="c-card05__wrapper">
+              <div class="c-card05__schedule">
+                <p class="c-card05__date c-card05__date--low">
+                  <time datetime="2025-05-20">
+                    5/20(月)
+                  </time>
+                </p>
+                <p class="c-card05__time">
+                  <time datetime="2025-05-20T13:30">
+                    13:30〜<br>15:30
+                  </time>
+                </p>
+              </div>
+              <div class="c-card05__content c-card05__content--low">
+                <h3 class="c-card__title">
+                  不動産投資を始めるために<br class="u-mobile">知っておくべきこと
+                </h3>
+                <p class="c-card05__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card05__btn-list">
+              <a href="#" class="c-card05__btn">
+                お申し込み
+              </a>
+              <a href="#" class="c-card05__btn c-card05__btn--detail">
+                詳　細
+              </a>
+            </div>
+          </div>
+          <div class="c-card05">
+            <div class="c-card05__wrapper">
+              <div class="c-card05__schedule">
+                <p class="c-card05__date c-card05__date--low">
+                  <time datetime="2025-05-20">
+                    5/20(月)
+                  </time>
+                </p>
+                <p class="c-card05__time">
+                  <time datetime="2025-05-20T13:30">
+                    13:30〜<br>15:30
+                  </time>
+                </p>
+              </div>
+              <div class="c-card05__content c-card05__content--low">
+                <h3 class="c-card__title">
+                  不動産投資を始めるために<br class="u-mobile">知っておくべきこと
+                </h3>
+                <p class="c-card05__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card05__btn-list">
+              <a href="#" class="c-card05__btn">
+                お申し込み
+              </a>
+              <a href="#" class="c-card05__btn c-card05__btn--detail">
+                詳　細
+              </a>
+            </div>
+          </div>
+          <div class="c-card05">
+            <div class="c-card05__wrapper">
+              <div class="c-card05__schedule">
+                <p class="c-card05__date c-card05__date--low">
+                  <time datetime="2025-05-20">
+                    5/20(月)
+                  </time>
+                </p>
+                <p class="c-card05__time">
+                  <time datetime="2025-05-20T13:30">
+                    13:30〜<br>15:30
+                  </time>
+                </p>
+              </div>
+              <div class="c-card05__content c-card05__content--low">
+                <h3 class="c-card__title">
+                  不動産投資を始めるために<br class="u-mobile">知っておくべきこと
+                </h3>
+                <p class="c-card05__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card05__btn-list">
+              <a href="#" class="c-card05__btn">
+                お申し込み
+              </a>
+              <a href="#" class="c-card05__btn c-card05__btn--detail">
+                詳　細
+              </a>
+            </div>
+          </div>
+          <div class="c-card05">
+            <div class="c-card05__wrapper">
+              <div class="c-card05__schedule">
+                <p class="c-card05__date c-card05__date--low">
+                  <time datetime="2025-05-20">
+                    5/20(月)
+                  </time>
+                </p>
+                <p class="c-card05__time">
+                  <time datetime="2025-05-20T13:30">
+                    13:30〜<br>15:30
+                  </time>
+                </p>
+              </div>
+              <div class="c-card05__content c-card05__content--low">
+                <h3 class="c-card__title">
+                  不動産投資を始めるために<br class="u-mobile">知っておくべきこと
+                </h3>
+                <p class="c-card05__text">
+                  ここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキストここにテキスト
+                </p>
+              </div>
+            </div>
+            <div class="c-card05__btn-list">
+              <a href="#" class="c-card05__btn">
+                お申し込み
+              </a>
+              <a href="#" class="c-card05__btn c-card05__btn--detail">
+                詳　細
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact お申し込みはこちら -->
+    <section class="p-contact l-contact" id="contact">
+      <div class="p-contact__wrapper l-inner">
+        <!-- section-title -->
+        <h2 class="c-title c-title--contact p-fadeIn__bottom js-fadeIn">
+          <span class="c-title__en c-title__en--white">contact</span>
+          <span class="c-title__text c-title__text--white">お申し込みはこちら</span>
+        </h2>
+        <!-- Form -->
+        <form class="p-contact__form" action="#" method="post">
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label"><label for="company">会社名</label></dt>
+            <dd class="p-contact__form-input"><input type="text" id="company" name="company" placeholder="株式会社アシストセミナー"></dd>
+          </dl>
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label"><label for="postal-code">郵便番号</label></dt>
+            <dd class="p-contact__form-input p-contact__form-input--small"><input type="text" id="postal-code" name="postal-code" placeholder="000-0000"></dd>
+          </dl>
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label required"><label for="address">住　所</label></dt>
+            <dd class="p-contact__form-input"><input type="text" id="address" name="address" placeholder="東京都新宿区XXX-XXXX"></dd>
+          </dl>
+          <p class="p-contact__error-msg js-text-address"></p>
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label"><label for="belonging-division">所属部署</label></dt>
+            <dd class="p-contact__form-input p-contact__form-input--midium"><input type="text" id="belonging-division" name="belonging-division" placeholder="広報部"></dd>
+          </dl>
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label required"><label for="name">氏　名</label></dt>
+            <dd class="p-contact__form-input p-contact__form-input--small"><input type="text" id="name" name="name" placeholder="田中　太郎"></dd>
+          </dl>
+          <p class="p-contact__error-msg js-text-name"></p>
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label required"><label for="ruby">フリガナ</label></dt>
+            <dd class="p-contact__form-input p-contact__form-input--small"><input type="text" id="ruby" name="ruby" placeholder="タナカ　タロウ"></dd>
+          </dl>
+          <p class="p-contact__error-msg js-text-ruby"></p>
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label required"><label for="tell">電話番号</label></dt>
+            <dd class="p-contact__form-input p-contact__form-input--midium"><input type="text" id="tell" name="tell" placeholder="000-0000-0000"></dd>
+          </dl>
+          <p class="p-contact__error-msg js-text-tell"></p>
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label required"><label for="email">メールアドレス</label></dt>
+            <dd class="p-contact__form-input p-contact__form-input--midium"><input type="email" id="email" name="email" placeholder="XXXX@XXXXX.com"></dd>
+          </dl>
+          <p class="p-contact__error-msg js-text-email"></p>
+          <dl class="p-contact__form-list">
+            <dt class="p-contact__form-label required"><label for="attending-desired">受講希望年月</label></dt>
+            <dd class="p-contact__form-input p-contact__form-input-attending-wrapper">
+              <div class="p-contact__form-wrapper">
+                <div class="p-contact__form-select-wrapper">
+                  <select id="attending-desired-year" name="attending-desired-year">
+                    <option hidden value="" selected>2025</option>
+                    <option value="2025">2025</option>
+                    <option value="2025">2026</option>
+                    <option value="2025">2027</option>
+                    <option value="2025">2028</option>
+                    <option value="2025">2029</option>
+                  </select>
+                </div>
+                <span class="p-contact__form-text">年</span>
+              </div>
+              <div class="p-contact__form-wrapper">
+                <div class="p-contact__form-select-wrapper">
+                  <select id="attending-desired-month" name="attending-desired-month" class="small">
+                    <option hidden value="" selected>01</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <span class="p-contact__form-text">月</span>
+              </div>
+            </dd>
+          </dl>
+          <p class="p-contact__error-msg js-text-attending-year"></p>
+          <p class="p-contact__error-msg js-text-attending-month"></p>
+            <dl class="p-contact__form-list p-contact__form-list--note">
+              <dt class="p-contact__form-label"><label for="note">備　考</label></dt>
+            <dd class="p-contact__form-input"><textarea id="note" name="note" placeholder="お問い合わせ内容をご記入ください。"></textarea></dd>
+          </dl>
+          <div class="p-contact__form-list p-contact__form-list--personaly">
+            <input class="p-contact__form-checkbox" id="personaly" type="checkbox" name="personaly">
+            <label for="personaly"><a href="#" target="_blank">個人情報保護方針</a>に同意いただけましたら、<br class="u-mobile">送信ボタンを押してください。</label>
+          </div>
+          <p class="p-contact__error-msg p-contact__error-msg--personaly js-text-personaly"></p>
+          <div class="p-contact__form-btn-wrapper">
+            <button type="submit" id="submit">
+              <a href="./index.html" class="p-contact__form-btn">
+                内容を確認
+              </a>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="l-footer p-footer" id="footer">
+      <div class="p-footer__wrapper l-inner">
+        <h2 class="p-footer__logo">
+          <a href="#" class="p-footer__logo-text">
+            ASSIST seminar
+          </a>
+        </h2>
+        <nav class="p-footer__nav">
+          <ul class="p-footer__nav-list">
+            <li class="p-footer__nav-item">
+              <a href="#schedule" class="p-footer__nav-link">
+                <span>開催予定のセミナー</span>
+                <span class="p-footer__nav-btn"></span>
+              </a>
+              <ul class="p-footer__dropmenu">
+                <li class="p-footer__dropmenu-item">
+                  <a href="#schedule" class="p-footer__dropmenu-link">
+                    不動産セミナー
+                  </a>
+                </li>
+                <li class="p-footer__dropmenu-item">
+                  <a href="#schedule" class="p-footer__dropmenu-link">
+                    投資信託セミナー
+                  </a>
+                </li>
+                <li class="p-footer__dropmenu-item">
+                  <a href="#schedule" class="p-footer__dropmenu-link">
+                    仮想通貨セミナー
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="p-footer__nav-item">
+              <a href="#" class="p-footer__nav-link">
+                <span>資産運用コラム</span>
+                <span class="p-footer__nav-btn"></span>
+              </a>
+            </li>
+            <li class="p-footer__nav-item">
+              <a href="#" class="p-footer__nav-link">
+                <span>アーカイブ動画</span>
+                <span class="p-footer__nav-btn"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="p-footer__info-list">
+        <li class="p-footer__info-item">
+          <a href="#" class="p-footer__company">運営会社</a>
+        </li>
+        <li class="p-footer__info-item">
+          <a href="#" class="p-footer__privacy">プライバシーポリシー</a>
+        </li>
+      </ul>
+      <p class="p-footer__copyright">
+        <small>&copy;2024 ASSIST seminar</small>
+      </p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./js/swiper-bundle.min.js"></script>
+    <script defer src="./js/script.min.js"></script>
+  </body>
+</html>
