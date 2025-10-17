@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-card01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: myrem(10);
+  @include mq(md) {
+    gap: myrem(27);
+    flex-direction: row;
+  }
+}

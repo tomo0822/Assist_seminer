@@ -1,0 +1,12 @@
+@use 'global' as *;
+
+.l-btn02 {
+  position: fixed;
+  top: 48.5%;
+  right: 1%;
+  z-index: 10;
+  @include mq(md) {
+    top: 57%;
+    right: 1.5%;
+  }
+}

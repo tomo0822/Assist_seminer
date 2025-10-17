@@ -1,0 +1,113 @@
+@use "sass:math";
+@use "sass:map";
+
+// インナー幅
+$innerWidth: 1000px;
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 15px;
+
+// フォント
+$font-main: "Noto Sans JP", sans-serif;
+$font-sub: "Lato", sans-serif;
+$font-num: "Noto Serif JP", serif;
+
+// 色指定
+$black: #000;
+$white: #fff;
+$blue1: #1e588f;
+$blue2: #d6e3f1;
+$blue3: #2a6eae;
+$blue4: #2a6dad;
+$blue5: #c1d9ef;
+$blue6: #e4f0fb;
+$lightblue1: #6096c8;
+$lightblue2: #e6eef6;
+$lightblue3: #3c75ad;
+$yellow: #f7fe2f;
+$orange1: #ef7000;
+$orange2: #ebaf7b;
+$red: #da0000;
+$gray1: #a8a8a8;
+$gray2: #e6eef6;
+$gray3: #363636;
+$gray4: #f6f6f6;
+
+// ブレイクポイント
+$breakpoints: (
+  sm: 600,
+  md: 768,
+  lg: 1024,
+  xl: 1440,
+);
+
+// フォントウェイト
+$font-weights: (
+  normal: 400,
+  medium: 500,
+  bold: 700,
+  black: 900,
+);
+
+// メディアクエリ
+$mediaquerys: (
+  sm: "screen and (min-width: #{map.get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map.get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map.get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map.get($breakpoints,'xl')}px)",
+);
+
+// メディアクエリを "@include mq(){}" で書くことができる
+@mixin mq($mediaquery: md) {
+  @media #{map.get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}
+
+// line-height
+@mixin l_height($pixels, $height) {
+  font-size: $pixels * 1px;
+  line-height: $height / $pixels;
+}
+
+@mixin f_around($pixels, $height: false, $weight: false, $spacing: false) {
+  font-size: $pixels * 1px;
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $height {
+    line-height: $height / $pixels;
+  }
+
+  @if $spacing {
+    letter-spacing: ($spacing / 1000) * 1em;
+  }
+}
+
+// 呼び出し例
+// ＠include f_around(フォントサイズ18px, 行送り30 , 太さW6, トラッキング200)
+
+$z-index-values: (
+  "modal": 1000,
+  "dropdown": 900,
+  "tooltip": 800,
+  "overlay": 700,
+  "header": 600,
+  "sidebar": 500,
+);
+
+@mixin set-z-index($element) {
+  @if map-has-key($z-index-values, $element) {
+    z-index: map-get($z-index-values, $element);
+  } @else {
+    @warn "無効なz-index要素です: #{$element}";
+  }
+}
+
+// 使用例:
+// .my-modal {
+//   @include set-z-index("modal");
+// }

@@ -1,0 +1,120 @@
+@use "global" as *;
+
+.p-fv {
+  width: 100%;
+  position: relative;
+  padding-top: myrem(55);
+  @include mq(md) {
+    padding-top: myrem(70);
+  }
+}
+
+.p-fv::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: myrem(461);
+  background: url(../images/fv/sp/fv-bg01-sp.png) no-repeat bottom / cover;
+  position: absolute;
+  z-index: -1;
+  @include mq(md) {
+    height: 100%;
+    background: url(../images/fv/pc/fv-bg01-pc.png) no-repeat bottom / cover;
+    bottom: myrem(30);
+  }
+}
+
+.p-fv::after {
+  content: "";
+  display: block;
+  width: calc(257 / 375 * 100%);
+  max-width: myrem(300);
+  height: calc(222 / 536 * 100%);
+  background: url(../images/fv/sp/fv-bg02-sp.png) no-repeat center / cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @include mq(md) {
+    aspect-ratio: 613 / 412;
+    width: clamp(400px, calc(613 / 1440 * 100vw), 613px);
+    max-width: none;
+    height: auto;
+    background: url(../images/fv/pc/fv-bg02-pc.png) no-repeat center / cover;
+    top: 0.5%;
+  }
+}
+
+.p-fv__wrapper {
+  padding-top: myrem(98);
+  @include mq(md) {
+    padding-top: myrem(49);
+  }
+}
+
+.p-fv__copy {
+  text-align: center;
+  position: relative;
+  line-height: 1.2;
+  margin-left: myrem(10);
+  @include mq(md) {
+    margin-left: 0;
+  }
+}
+
+.p-fv__copy01 {
+  font-size: myrem(19);
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: $blue1;
+  padding-top: myrem(5);
+  @include mq(md) {
+    font-size: myrem(38);
+    margin-left: myrem(10);
+    padding-top: myrem(10);
+  }
+}
+
+.p-fv__copy02 {
+  font-size: myrem(34);
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  padding-top: myrem(5);
+  @include mq(md) {
+    font-size: myrem(68);
+    margin-left: myrem(10);
+    padding-top: myrem(10);
+  }
+}
+
+.p-fv__copy::before {
+  content: "";
+  display: block;
+  width: myrem(1);
+  height: myrem(32);
+  background: $blue1;
+  margin: 0 auto;
+  @include mq(md) {
+    width: myrem(2);
+    height: myrem(65);
+  }
+}
+
+.p-fv__copy::after {
+  content: "";
+  display: block;
+  aspect-ratio: 125 / 48;
+  width: calc(125 / 375 * 100%);
+  background-image: url(../images/fv/sp/fv-bg03-sp.png);
+  background-size: cover;
+  position: absolute;
+  top: -17%;
+  right: 3%;
+  @include mq(md) {
+    aspect-ratio: 302 / 117;
+    width: calc(302 / 1440 * 100%);
+    background-image: url(../images/fv/pc/fv-bg03-pc.png);
+    top: 57%;
+    right: 3.5%;
+  }
+}

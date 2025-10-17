@@ -1,0 +1,155 @@
+@use "global" as *;
+
+.c-graph01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: myrem(238);
+  height: myrem(238);
+  font-size: myrem(19);
+  font-weight: 700;
+  color: $blue1;
+  background-image: radial-gradient($white 35%, transparent 31%),
+    conic-gradient(
+      $blue2 0% 8%,
+      $orange2 8% 64%,
+      $blue2 64% 91%,
+      $lightblue2 91% 100%
+    );
+  border-radius: 50%;
+  position: relative;
+  @include mq(md) {
+    width: myrem(326);
+    height: myrem(326);
+    font-size: myrem(26);
+    background-image: radial-gradient($white 35%, transparent 31%),
+      conic-gradient(
+        $blue2 0% 8%,
+        $orange2 8% 64%,
+        $blue2 64% 91.5%,
+        $lightblue2 91.5% 100%
+      );
+  }
+}
+
+.c-graph01--income {
+  background-image: radial-gradient($white 40%, transparent 40%),
+    conic-gradient(
+      $blue2 0% 32%,
+      $orange2 32% 63%,
+      $blue2 63% 86%,
+      $lightblue2 86% 100%
+    );
+  border-radius: 50%;
+  @include mq(md) {
+    background-image: radial-gradient($white 40%, transparent 40%),
+      conic-gradient(
+        $blue2 0% 33%,
+        $orange2 33% 63%,
+        $blue2 63% 85.5%,
+        $lightblue2 85.5% 100%
+      );
+  }
+}
+
+.c-graph01__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $white;
+  line-height: 1;
+  position: absolute;
+  font-weight: 700;
+  @include mq(md) {
+  }
+}
+
+.c-graph01__label--orange {
+  text-shadow: 2px 2px 2px $orange1, -2px -2px 2px $orange1,
+    -2px 2px 2px $orange1, 2px -2px 2px $orange1, 2px 0 2px $orange1,
+    -2px 0 2px $orange1, 0 2px 2px $orange1, 0 -2px 2px $orange1;
+  top: 56.5%;
+  right: 1%;
+  @include mq(md) {
+    text-shadow: 4px 4px 4px $orange1, -4px -4px 4px $orange1,
+      -4px 4px 4px $orange1, 4px -4px 4px $orange1, 4px 0 4px $orange1,
+      -4px 0 4px $orange1, 0 4px 4px $orange1, 0 -4px 4px $orange1;
+  }
+}
+
+.c-graph01__label--orange.c-graph01__label--income {
+  top: 75.5%;
+  right: 17%;
+  @include mq(md) {
+    right: 18%;
+  }
+}
+
+.c-graph01__label--blue {
+  text-shadow: 2px 2px 2px $blue1, -2px -2px 2px $blue1, -2px 2px 2px $blue1,
+    2px -2px 2px $blue1, 2px 0 2px $blue1, -2px 0 2px $blue1, 0 2px 2px $blue1,
+    0 -2px 2px $blue1;
+  top: 38%;
+  left: -3%;
+  @include mq(md) {
+    text-shadow: 4px 4px 4px $blue1, -4px 4px 4px $blue1, -4px 4px 4px $blue1,
+      4px -4px 4px $blue1, 4px 0 4px $blue1, -4px 0 4px $blue1, 0 4px 4px $blue1,
+      0 -4px 4px $blue1;
+  }
+}
+
+.c-graph01__label--blue.c-graph01__label--income {
+  top: 44%;
+  left: -13%;
+  @include mq(md) {
+  }
+}
+
+.c-graph__low {
+  font-size: myrem(19);
+  font-weight: 700;
+  @include mq(md) {
+    font-size: myrem(26);
+  }
+}
+
+.c-graph01__high {
+  font-size: myrem(22);
+  font-weight: 700;
+  @include mq(md) {
+    font-size: myrem(30);
+  }
+}
+
+.c-graph__percent {
+  font-size: myrem(30);
+  font-weight: 700;
+  @include mq(md) {
+    font-size: myrem(42);
+  }
+}
+
+.c-graph__percent::after {
+  content: "%";
+  font-size: 80%;
+  @include mq(md) {
+  }
+}
+
+.c-graph01__text {
+  font-size: myrem(19);
+  line-height: calc(25 / 19);
+  letter-spacing: 0.075em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: myrem(7);
+  margin-left: myrem(6);
+  @include mq(md) {
+    font-size: myrem(26);
+    letter-spacing: 0.04em;
+    margin-left: myrem(9);
+  }
+}

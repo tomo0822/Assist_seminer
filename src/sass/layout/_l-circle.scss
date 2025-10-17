@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.l-circle {
+  margin-top: myrem(22);
+  @include mq(md) {
+    margin-top: myrem(28);
+  }
+}

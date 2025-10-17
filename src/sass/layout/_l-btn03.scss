@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+.l-btn03 {
+  display: flex;
+  justify-content: center;
+  margin-top: myrem(106);
+  @include mq(md) {
+    margin-top: myrem(90);
+  }
+}
+
+.l-btn03--banner01 {
+  margin-top: myrem(10);
+  @include mq(md) {
+    margin-top: myrem(39);
+  }
+}

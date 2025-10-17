@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.l-btn01 {
+  margin-top: myrem(63);
+  padding-right: myrem(15);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  @include mq(md) {
+    margin-top: myrem(85);
+  }
+}

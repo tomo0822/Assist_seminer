@@ -1,0 +1,58 @@
+@use "global" as *;
+
+// リンクボタン
+
+.c-btn01 {
+  font-size: myrem(14);
+  letter-spacing: 0;
+  font-weight: 700;
+  padding: myrem(10) myrem(14) myrem(10) myrem(20);
+  background: $orange1;
+  color: $white;
+  border: 2px solid $white;
+  border-radius: myrem(40);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: myrem(7);
+  @include mq(md) {
+    font-size: myrem(20);
+    letter-spacing: .025em;
+    border-radius: myrem(25);
+    padding: myrem(10) myrem(30) myrem(10) myrem(40);
+    gap: myrem(6);
+  }
+}
+
+.c-btn01 span {
+  position: relative;
+  display: block;
+  width: myrem(15);
+  height: myrem(15);
+  border-radius: 50%;
+  background: $white;
+  @include mq(md) {
+    width: myrem(22);
+    height: myrem(22);
+  }
+}
+
+.c-btn01 span::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: myrem(4) 0 myrem(4) myrem(6);
+  border-color: transparent transparent transparent $orange1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + myrem(0.5)), calc(-50% - myrem(0.5)));
+  @include mq(md) {
+      border-width: myrem(5) 0 myrem(5) myrem(8);
+      transform: translate(calc(-50% + myrem(1.5)), -50%);
+  }
+}
+
+

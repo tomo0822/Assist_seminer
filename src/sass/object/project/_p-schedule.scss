@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.p-schedule {
+  background: $gray4;
+  padding-block: myrem(60);
+  @include mq(md) {
+    padding-block: myrem(106) myrem(94);
+  }
+}
+
+.p-schedule__wrapper {
+
+  @include mq(md) {
+    
+  }
+}

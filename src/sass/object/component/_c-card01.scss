@@ -1,0 +1,115 @@
+@use "global" as *;
+
+.c-card01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: myrem(10);
+  background: $blue6;
+  border-radius: myrem(8);
+  padding: myrem(20) 0;
+  width: 100%;
+  max-height: myrem(115);
+  @include mq(md) {
+    flex-direction: column;
+    width: calc(230 / 1000 * 100%);
+    padding: myrem(35) 0 myrem(31) 0;
+    gap: myrem(22);
+    border-radius: myrem(15);
+    max-height: none;
+  }
+}
+
+.c-card01--learn02 {
+  padding: myrem(18) 0 myrem(16) 0;
+  gap: myrem(18);
+  @include mq(md) {
+    padding: myrem(31) 0 myrem(29) 0;
+    gap: myrem(20);
+  }
+}
+
+.c-card01--learn03 {
+  padding: myrem(22) 0 myrem(19) 0;
+  @include mq(md) {
+    padding: myrem(30) 0 myrem(31) 0;
+    gap: myrem(24);
+  }
+}
+
+.c-card01--learn04 {
+  padding: myrem(16) 0 myrem(10) 0;
+  gap: myrem(14);
+  @include mq(md) {
+    padding: myrem(24) 0 myrem(30) 0;
+    gap: myrem(14);
+  }
+}
+
+.c-card01__image {
+  width: calc(101 / 345 * 100%);
+  max-width: myrem(101);
+  aspect-ratio: 101 / 75;
+  margin-left: myrem(7);
+  @include mq(md) {
+    width: calc(160 / 230 * 100%);
+    max-width: none;
+    aspect-ratio: 160 / 118;
+    margin-left: myrem(-4);
+  }
+}
+
+.c-card01__image--learn02 {
+  width: calc(93 / 345 * 100%);
+  aspect-ratio: 93 / 81;
+  margin-left: myrem(2);
+  @include mq(md) {
+    width: calc(145 / 230 * 100%);
+    aspect-ratio: 145 / 126;
+    margin-left: myrem(8);
+  }
+}
+
+.c-card01__image--learn03 {
+  width: calc(101 / 345 * 100%);
+  aspect-ratio: 101 / 74;
+  margin-left: myrem(14);
+  @include mq(md) {
+    width: calc(164 / 230 * 100%);
+    aspect-ratio: 164 / 121;
+    margin-left: myrem(4);
+  }
+}
+
+.c-card01__image--learn04 {
+  width: calc(85 / 345 * 100%);
+  aspect-ratio: 85 / 88;
+  margin-left: myrem(24);
+  @include mq(md) {
+    width: calc(132 / 230 * 100%);
+    aspect-ratio: 132 / 138;
+    margin-left: 0;
+  }
+}
+
+
+
+.c-card01__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  @include mq(md) {
+  }
+}
+
+.c-card01__text {
+  font-size: myrem(18);
+  letter-spacing: 0.01em;
+  line-height: calc(25 / 18);
+  font-weight: 700;
+  text-align: center;
+  @include mq(md) {
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.l-schedule {
+  margin-top: myrem(33);
+  @include mq(md) {
+    margin-top: myrem(100);
+  }
+}

@@ -1,0 +1,156 @@
+@use "global" as *;
+
+.c-card04 {
+  display: flex;
+  gap: myrem(20);
+  @include mq(md) {
+    flex-direction: column;
+    gap: myrem(17);
+  }
+}
+
+.c-card04__image-wrapper {
+  width: myrem(109);
+  height: myrem(109);
+  border-radius: 50%;
+  background: $lightblue2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @include mq(md) {
+    width: myrem(172);
+    height: myrem(172);
+  }
+}
+
+.c-card04__image-wrapper::after {
+  content: "";
+  display: block;
+  width: myrem(2);
+  height: myrem(30);
+  background: $lightblue2;
+  position: absolute;
+  top: 100%;
+  @include mq(md) {
+    width: myrem(40);
+    height: myrem(3);
+    top: 50%;
+    right: -20%;
+    transform: translateY(-50%);
+
+  }
+}
+
+.c-card04:last-child .c-card04__image-wrapper::after {
+  display: none;
+  @include mq(md) {
+    
+  }
+}
+
+.c-card04__image {
+  aspect-ratio: 46 / 69;
+  width: calc(46 / 109 * 100%);
+  @include mq(md) {
+    aspect-ratio: 74 / 109; 
+    width: calc(74 / 172 * 100%);
+  }
+}
+
+.c-card04__image--quote {
+  aspect-ratio: 48 / 32;
+  width: calc(48 / 109 * 100%);
+  @include mq(md) {
+    aspect-ratio: 76 / 51;
+    width: calc(76 / 172 * 100%);
+  }
+}
+
+.c-card04__image--application {
+  aspect-ratio: 58 / 48;
+  width: calc(58 / 109 * 100%);
+  @include mq(md) {
+    aspect-ratio: 93 / 78;
+    width: calc(93 / 172 * 100%);
+  }
+}
+
+.c-card04__image--received {
+  aspect-ratio: 72 / 38;
+  width: calc(72 / 109 * 100%);
+  @include mq(md) {
+    aspect-ratio: 115 / 60;
+    width: calc(115 / 172 * 100%);
+  }
+}
+
+.c-card04__image--training {
+  aspect-ratio: 48 / 48;
+  width: calc(48 / 109 * 100%);
+  @include mq(md) {
+    aspect-ratio: 85 / 85;
+    width: calc(85 / 172 * 100%);
+  }
+}
+
+.c-card04__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  @include mq(md) {
+      
+  }
+}
+
+.c-card04__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  @include mq(md) {
+    
+  }
+}
+
+.c-card04__title {
+  font-size: myrem(19);
+  font-weight: 700;
+  color: $blue1;
+  @include mq(md) {
+    font-size: myrem(22);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.c-card04__title::after {
+  content: "";
+  display: block;
+  width: myrem(25);
+  height: myrem(1);
+  background: $blue1;
+  margin-top: myrem(8);
+  @include mq(md) {
+    width: myrem(38);
+    height: myrem(1);
+    margin: myrem(10) auto 0;
+  }
+}
+
+.c-card04__text {
+  font-size: myrem(14);
+  line-height: calc(20 / 14);
+  margin-top: myrem(10);
+  @include mq(md) {
+    font-size: myrem(16);
+    letter-spacing: -.03em;
+    line-height: calc(26 / 16);
+    margin-top: myrem(12);
+  }
+}
+
+
+

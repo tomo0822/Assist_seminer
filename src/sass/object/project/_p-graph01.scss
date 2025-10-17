@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.p-graph01 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: myrem(33);
+  margin-top: myrem(41);
+  margin-left: myrem(8);
+  @include mq(md) {
+    flex-direction: row;
+    gap: myrem(66);
+    margin-top: myrem(38);
+    margin-left: myrem(16);
+  }
+}

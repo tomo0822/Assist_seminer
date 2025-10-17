@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.p-learn__copy {
+  margin-top: myrem(24);
+  margin-inline: auto;
+  text-align: center;
+  position: relative;
+  max-width: myrem(380);
+  @include mq(md) {
+    margin-top: myrem(55);
+   max-width: myrem(730);
+ }
+}
+
+.p-learn__copy::before {
+  content: "";
+  display: block;
+  width: myrem(32);
+  height: 100%;
+  background: url(../images/learn/leran-leaf-left.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: myrem(8);
+  left: 0;
+  @include mq(md) {
+    width: myrem(64);
+    top: myrem(18);
+    left: 1%;
+  }
+}
+
+.p-learn__copy::after {
+  content: "";
+  display: block;
+  width: myrem(32);
+  height: 100%;
+  background: url(../images/learn/leran-leaf-right.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: myrem(8);
+  right: 0;
+  @include mq(md) {
+    width: myrem(64);
+    top: myrem(18);
+    right: -1%;
+  }
+}
+
+.p-learn__copy-text {
+  font-size: myrem(19);
+  letter-spacing: .075em;
+  line-height: 1;
+  color: $blue1;
+  margin-left: myrem(-4);
+  margin-bottom: myrem(8);
+  @include mq(md) {
+   font-size: myrem(38);
+ }
+}
+
+.p-learn__copy-num {
+  font-size: myrem(50);
+  font-family: $font-num;
+  font-style: oblique;
+  letter-spacing: 0;
+  margin-right: myrem(6);
+  @include mq(md) {
+   font-size: myrem(100);
+   margin-right: 0;
+   margin-left: myrem(-3);
+ }
+}
+
+.p-learn__copy-num::after {
+  content: "%";
+  font-size: myrem(35);
+  @include mq(md) {
+   font-size: myrem(75);
+ }
+}
+
+.p-learn__copy-text02 {
+  font-size: myrem(17);
+  letter-spacing: 0;
+  margin-top: myrem(9);
+  margin-left: myrem(13);
+  @include mq(md) {
+    font-size: myrem(34);
+    letter-spacing: -0.01em;
+    margin-top: myrem(15);
+    margin-left: myrem(26);
+  }
+}
+

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-card03 {
+  counter-reset: card03;
+  display: flex;
+  flex-direction: column;
+  gap: myrem(30);
+  margin-top: myrem(23);
+  @include mq(md) {
+    gap: myrem(109);
+    margin-top: myrem(57);
+  }
+}

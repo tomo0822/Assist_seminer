@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.p-voice .p-card02 {
+  
+  @include mq(md) {
+  }
+}
+
+.p-card02__wrapper {
+  margin-top: myrem(30);
+  @include mq(md) {
+    margin-top: myrem(42);
+  }
+}
+

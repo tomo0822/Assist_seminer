@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.l-learn {
+  margin-top: myrem(57);
+  @include mq(md) {
+    margin-top: myrem(68);
+  }
+}

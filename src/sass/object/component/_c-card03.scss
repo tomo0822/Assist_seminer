@@ -1,0 +1,204 @@
+@use "global" as *;
+
+.c-card03 {
+  counter-increment: card03;
+  @include mq(md) {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position: relative;
+  }
+}
+
+.c-card03__content {
+  position: relative;
+  padding-left: myrem(15);
+  padding-bottom: myrem(130);
+  background: $white;
+  @include mq(md) {
+    padding-left: 0;
+    padding-bottom: myrem(30);
+    background: none;
+    position: relative;
+    width: 80%;
+  }
+}
+
+.c-card03:nth-child(odd) .c-card03__content {
+  margin-left: calc(50% - 50vw);
+  margin-right: myrem(15);
+  @include mq(md) {
+    margin: 0;
+  }
+}
+
+
+.c-card03:nth-child(even) .c-card03__content {
+  margin-left: myrem(15);
+  margin-right: calc(50% - 50vw);
+  @include mq(md) {
+    margin: 0;
+    padding-left: myrem(190);
+    align-self: flex-end;
+  }
+}
+
+
+.c-card03:first-child .c-card03__content {
+  margin-right: 0;
+  // width: calc(360 / 375 * 100%);
+  @include mq(md) {
+    
+  }
+}
+
+.c-card03__content::before {
+  @include mq(md) {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100%;
+    background: $white;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.c-card03:nth-child(odd) .c-card03__content::before {
+  @include mq(md) {
+    margin-left: calc(50% - 50vw);
+    right: 0;
+  }
+}
+
+.c-card03:nth-child(even) .c-card03__content::before {
+  @include mq(md) {
+    margin-right: calc(50% - 50vw);
+    left: 0;
+  }
+}
+
+
+.c-card03__header {
+  display: flex;
+  gap: myrem(10);
+  align-items: flex-start;
+  padding-top: myrem(12);
+  @include mq(md) {
+    padding-top: myrem(17);
+    margin-left: myrem(28);
+    gap: myrem(28);
+  }
+}
+
+.c-card03:not(:first-child) .c-card03__content .c-card03__header {
+  gap: myrem(14);
+  @include mq(md) {
+    gap: myrem(27);
+  }
+}
+
+.c-card03:nth-child(even) .c-card03__header {
+
+  @include mq(md) {
+    margin-left: 0;
+  }
+}
+
+.c-card03__number {
+  @include mq(md) {
+  }
+}
+
+.c-card03__number::before {
+  content: "" counter(card03, decimal-leading-zero);
+  font-size: myrem(50);
+  font-family: $font-sub;
+  letter-spacing: 0.02em;
+  color: $gray2;
+  @include mq(md) {
+    font-size: myrem(64);
+  }
+}
+
+.c-card03__title {
+  font-size: myrem(22);
+  line-height: calc(30 / 22);
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  padding-top: myrem(12);
+  @include mq(md) {
+    font-size: myrem(24);
+    padding-top: myrem(14);
+  }
+}
+
+.c-card03__text {
+  display: block;
+  width: calc(310 / 345 * 100%);
+  font-size: myrem(16);
+  line-height: calc(25 / 16);
+  letter-spacing: -.03em;
+  margin-top: myrem(8);
+  @include mq(md) {
+    width: calc(573 / 800 * 100%);
+    margin-top: myrem(4);
+    margin-left: myrem(32);
+  }
+}
+
+.c-card03:not(:first-child) .c-card03__content .c-card03__text {
+  width: 94%;
+  margin-top: myrem(10);
+  @include mq(md) {
+    width: calc(573 / 800 * 100%);
+    margin-top: 0;
+    padding-top: myrem(4);
+  }
+}
+
+.c-card03:nth-child(even) .c-card03__content .c-card03__text {
+  @include mq(md) {
+    width: calc(573 / 610 * 100%);
+    margin-left: 0;
+  }
+}
+
+.c-card03__image {
+  aspect-ratio: 325 / 229;
+  width: calc(325 / 345 * 100%);
+  position: sticky;
+  z-index: 100;
+  @include mq(md) {
+    aspect-ratio: 359 / 253;
+    width: calc(359 / 1000 * 100%);
+    position: absolute;
+    top: myrem(43);
+  }
+}
+
+.c-card03:nth-child(odd) .c-card03__image {
+  margin: myrem(-103) 0 0 auto;
+  @include mq(md) {
+    margin: 0;
+    right: 0;
+  }
+}
+
+.c-card03:nth-child(even) .c-card03__image {
+  margin: myrem(-97) auto 0 0;
+  @include mq(md) {
+    margin: 0;
+    left: 0;
+  }
+}
+
+.c-card03__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 3px 10px 0 rgba(4, 0, 0, 0.25);
+  @include mq(md) {
+  }
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.p-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: myrem(5);
+  @include mq(md) {
+    gap: myrem(28);
+  }
+}

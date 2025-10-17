@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.c-btn02 {
+  background: $orange1;
+  color: $white;
+  border: 2px solid $white;
+  border-radius: myrem(10);
+  box-shadow: 0 3px 20px 0 rgba(4, 0, 0, 0.25);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: myrem(5.5);
+  padding: myrem(7.5) myrem(6) myrem(10) myrem(11);
+  @include mq(md) {
+    gap: myrem(8);
+    padding: myrem(25) myrem(20) myrem(26) myrem(26);
+  }
+}
+
+.c-btn02__image {
+  width: myrem(43.5);
+  height: myrem(44);
+  @include mq(md) {
+    width: myrem(80);
+    height: myrem(81);
+  }
+}
+
+.c-btn02__image img {
+  aspect-ratio: 87 / 88;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 80 / 81;
+  }
+}
+
+.c-btn02 span {
+  position: relative;
+  display: block;
+  width: myrem(12);
+  height: myrem(12);
+  border-radius: 50%;
+  background: $white;
+  @include mq(md) {
+    width: myrem(22);
+    height: myrem(22);
+  }
+}
+
+.c-btn02 span::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: myrem(3) 0 myrem(3) myrem(4);
+  border-color: transparent transparent transparent $orange1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + myrem(0.5)), calc(-50%));
+  @include mq(md) {
+      border-width: myrem(5) 0 myrem(5) myrem(8);
+      transform: translate(calc(-50% + myrem(1.5)), -50%);
+  }
+}
+
+.c-btn02__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: myrem(1);
+  font-size: myrem(11);
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  line-height: 1.2;
+  @include mq(md) {
+    font-size: myrem(20);
+    letter-spacing: .02em;
+    gap: myrem(8);
+  }
+}
