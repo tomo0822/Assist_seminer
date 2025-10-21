@@ -74,9 +74,9 @@
   top: 56.5%;
   right: 1%;
   @include mq(md) {
-    text-shadow: 4px 4px 4px $orange1, -4px -4px 4px $orange1,
-      -4px 4px 4px $orange1, 4px -4px 4px $orange1, 4px 0 4px $orange1,
-      -4px 0 4px $orange1, 0 4px 4px $orange1, 0 -4px 4px $orange1;
+    text-shadow: 3px 3px 3px $orange1, -3px -3px 3px $orange1,
+      -3px 3px 3px $orange1, 3px -3px 3px $orange1, 3px 0 3px $orange1,
+      -3px 0 3px $orange1, 0 3px 3px $orange1, 0 -3px 3px $orange1;
   }
 }
 
@@ -95,9 +95,9 @@
   top: 38%;
   left: -3%;
   @include mq(md) {
-    text-shadow: 4px 4px 4px $blue1, -4px 4px 4px $blue1, -4px 4px 4px $blue1,
-      4px -4px 4px $blue1, 4px 0 4px $blue1, -4px 0 4px $blue1, 0 4px 4px $blue1,
-      0 -4px 4px $blue1;
+    text-shadow: 3px 3px 3px $blue1, -3px 3px 3px $blue1, -3px 3px 3px $blue1,
+      3px -3px 3px $blue1, 3px 0 3px $blue1, -3px 0 3px $blue1, 0 3px 3px $blue1,
+      0 -3px 3px $blue1;
   }
 }
 
@@ -135,7 +135,9 @@
 .c-graph__percent::after {
   content: "%";
   font-size: 80%;
+  margin-left: myrem(2);
   @include mq(md) {
+    margin-left: myrem(3);
   }
 }
 

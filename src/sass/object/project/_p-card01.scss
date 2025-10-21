@@ -3,7 +3,7 @@
 .p-card01 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
   gap: myrem(10);
   @include mq(md) {

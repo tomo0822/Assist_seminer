@@ -61,6 +61,9 @@ jQuery(function ($) {
       delay: 0, // 自動再生の遅延を0ミリ秒に設定（すぐに次のスライドに移動）
       disableOnInteraction: false, // ユーザーがスライドを操作しても自動再生を停止しない
     },
+    simulateTouch: true, // マウスでもドラッグ可能
+    touchRatio: 1, // ドラッグ感度
+    grabCursor: true,
     slidesPerView: 1.69,
     spaceBetween: 20,
     breakpoints: {

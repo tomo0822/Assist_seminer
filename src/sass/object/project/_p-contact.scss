@@ -2,6 +2,7 @@
 
 .p-contact {
   background: $blue4;
+  background: linear-gradient(#2a6eae, #164a7a);
   padding-block: myrem(60);
   @include mq(md) {
     padding-block: myrem(91) myrem(89);
@@ -238,6 +239,7 @@ label[for="personaly"] a {
   position: absolute;
   top: 42%;
   right: myrem(9);
+  pointer-events: none;
   @include mq(md) {
     border-width: 10px 5.5px 0 5.5px;
     border-color: #000000 transparent transparent transparent;

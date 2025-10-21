@@ -341,7 +341,7 @@
 .p-header__nav-item:first-child:hover .p-header__dropmenu {
   @include mq(md) {
     visibility: visible;
-    opacity: .5;
+    opacity: .8;
   }
 }
 
@@ -373,6 +373,14 @@
     padding-block: myrem(10);
     padding-left: myrem(50);
     opacity: 1;
+  }
+}
+
+.p-header__dropmenu-link:hover {
+  @include mq(md) {
+    color: $blue1;
+    opacity: 1;
+    font-weight: 700;
   }
 }
 
