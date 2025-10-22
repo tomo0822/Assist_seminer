@@ -44,13 +44,12 @@
 }
 
 
-.c-card03:first-child .c-card03__content {
-  margin-right: 0;
-  // width: calc(360 / 375 * 100%);
-  @include mq(md) {
+// .c-card03:first-child .c-card03__content {
+//   margin-right: 0;
+//   @include mq(md) {
     
-  }
-}
+//   }
+// }
 
 .c-card03__content::before {
   @include mq(md) {
@@ -113,6 +112,7 @@
 .c-card03__number::before {
   content: "" counter(card03, decimal-leading-zero);
   font-size: myrem(50);
+  font-weight: 700;
   font-family: $font-sub;
   letter-spacing: 0.02em;
   color: $gray2;

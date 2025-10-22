@@ -33,6 +33,7 @@
 
 .c-card05__date {
   font-size: myrem(16);
+  font-weight: 700;
   letter-spacing: .075em;
   background: $blue3;
   color: $white;
@@ -52,6 +53,7 @@
 
 .c-card05__time {
   font-size: myrem(16);
+  font-weight: 700;
   letter-spacing: .075em;
   line-height: calc(20 / 16);
   background: $lightblue1;
@@ -130,6 +132,7 @@
 .c-card05__btn {
   font-size: myrem(16);
   letter-spacing: .075em;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   justify-content: center;

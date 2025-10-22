@@ -3,7 +3,13 @@
 .c-card02 {
   display: flex;
   flex-direction: column;
+  max-width: myrem(213);
+  margin-right: myrem(20);
   @include mq(md) {
+    // max-width: myrem(230);
+    max-width: clamp(10.625rem, 6.339rem + 8.93vw, 14.375rem);
+    // min-width: myrem(230);
+    margin-right: myrem(29);
   }
 }
 
@@ -32,6 +38,7 @@
   top: 0;
   right: 0;
   font-size: myrem(19);
+  font-weight: 700;
   letter-spacing: .075em;
   line-height: calc(32 / 19);
   color: $white;

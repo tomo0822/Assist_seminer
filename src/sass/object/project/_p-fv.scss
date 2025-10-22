@@ -113,6 +113,7 @@
   @include mq(md) {
     aspect-ratio: 302 / 117;
     width: calc(302 / 1440 * 100%);
+    max-width: myrem(302);
     background-image: url(../images/fv/pc/fv-bg03-pc.png);
     top: 57%;
     right: 3.5%;

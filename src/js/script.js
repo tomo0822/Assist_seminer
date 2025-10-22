@@ -64,12 +64,12 @@ jQuery(function ($) {
     simulateTouch: true, // マウスでもドラッグ可能
     touchRatio: 1, // ドラッグ感度
     grabCursor: true,
-    slidesPerView: 1.69,
-    spaceBetween: 20,
+    slidesPerView: "auto",
+    spaceBetween: 0,
     breakpoints: {
       768: {
-        slidesPerView: 5.7,
-        spaceBetween: 29,
+        slidesPerView: "auto",
+        spaceBetween: 0,
       },
     },
   });
