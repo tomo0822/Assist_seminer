@@ -56,9 +56,9 @@ jQuery(function ($) {
     // オプション
     direction: "horizontal", // 水平スライダー
     loop: true, // ループ有効化
-    speed: 10000,
+    speed: 5000,
     autoplay: {
-      delay: 0, // 自動再生の遅延を0ミリ秒に設定（すぐに次のスライドに移動）
+      delay: 1, // 自動再生の待ち時間（ミリ秒）0だとドラッグできない
       disableOnInteraction: false, // ユーザーがスライドを操作しても自動再生を停止しない
     },
     simulateTouch: true, // マウスでもドラッグ可能
