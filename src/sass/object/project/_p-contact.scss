@@ -189,6 +189,7 @@ label[for="personaly"] a {
   border-radius: myrem(8);
   appearance: none;
   position: relative;
+  cursor: pointer;
   @include mq(md) {
     font-size: myrem(16);
     padding: myrem(10) myrem(74) myrem(12) myrem(17);

@@ -43,14 +43,6 @@
   }
 }
 
-
-// .c-card03:first-child .c-card03__content {
-//   margin-right: 0;
-//   @include mq(md) {
-    
-//   }
-// }
-
 .c-card03__content::before {
   @include mq(md) {
     content: "";
@@ -98,14 +90,8 @@
 }
 
 .c-card03:nth-child(even) .c-card03__header {
-
   @include mq(md) {
     margin-left: 0;
-  }
-}
-
-.c-card03__number {
-  @include mq(md) {
   }
 }
 

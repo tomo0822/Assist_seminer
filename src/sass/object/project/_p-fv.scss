@@ -49,6 +49,9 @@
   padding-top: myrem(98);
   @include mq(md) {
     padding-top: myrem(49);
+    max-width: myrem(1440);
+    margin: 0 auto;
+    position: relative;
   }
 }
 
@@ -58,7 +61,7 @@
   line-height: 1.2;
   margin-left: myrem(10);
   @include mq(md) {
-    margin-left: 0;
+    margin: 0 auto;
   }
 }
 
@@ -81,7 +84,7 @@
   font-weight: 700;
   padding-top: myrem(5);
   @include mq(md) {
-    font-size: myrem(68);
+    font-size: clamp(2.5rem, 0.5rem + 4.17vw, 4.25rem);
     margin-left: myrem(10);
     padding-top: myrem(10);
   }
@@ -116,6 +119,6 @@
     max-width: myrem(302);
     background-image: url(../images/fv/pc/fv-bg03-pc.png);
     top: 57%;
-    right: 3.5%;
+    right: 3.1%;
   }
 }

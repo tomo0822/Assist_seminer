@@ -142,8 +142,10 @@ jQuery(function ($) {
       // ==============================
       if (scroll > 50) {
         $(".p-fadeout-btn").addClass("is-active");
+        $(".p-fadeout-btn").css("pointer-events", "none");
       } else {
         $(".p-fadeout-btn").removeClass("is-active");
+        $(".p-fadeout-btn").css("pointer-events", "auto");
       }
 
       // ==============================

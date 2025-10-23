@@ -6,7 +6,9 @@
   right: 0.5%;
   z-index: 10;
   @include mq(md) {
-    top: 57%;
-    right: 1.4%;
+    // top: 57%;
+    top: myrem(467);
+    // right: 1.4%;
+    right: max(1.5%, calc(50% - 720px));
   }
 }
