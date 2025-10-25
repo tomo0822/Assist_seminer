@@ -115,6 +115,7 @@ label[for="personaly"] {
   letter-spacing: 0;
   line-height: calc(30 / 14);
   cursor: pointer;
+  text-align: center;
   @include mq(md) {
     font-size: myrem(16);
     letter-spacing: 0.02em;

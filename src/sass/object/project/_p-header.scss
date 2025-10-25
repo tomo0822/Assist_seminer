@@ -242,7 +242,7 @@
 
 .p-header__nav-item:nth-of-type(3) .p-header__nav-link {
   @include mq(md) {
-    padding-inline-end: myrem(30);
+    // padding-inline-end: myrem(30);
   }
 }
 
@@ -442,11 +442,9 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    // gap: clamp(0.625rem, -0.804rem + 2.98vw, 1.875rem);
-    gap: clamp(0.063rem, -2.009rem + 4.32vw, 1.875rem);
+    // gap: clamp(0.063rem, -2.009rem + 4.32vw, 1.875rem);
+    gap: myrem(9);
     padding-inline: myrem(24);
-  //   padding-right: clamp(0.063rem, -1.58rem + 3.42vw, 1.5rem);
-  //   padding-left: clamp(0.063rem, -1.58rem + 3.42vw, 1.5rem);
   }
 }
 
