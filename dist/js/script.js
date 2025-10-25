@@ -128,8 +128,10 @@ jQuery(function ($) {
         // ボタン：フッター手前でフェードアウト
         if (scroll + windowHeight < footerTop - btnHeight - fadeOutMargin) {
           $(".p-fadein-btn").addClass("is-active");
+          $(".p-fadein-btn").css("pointer-events", "auto");
         } else {
           $(".p-fadein-btn").removeClass("is-active");
+          $(".p-fadein-btn").css("pointer-events", "none");
         }
       } else {
         // ページ上部に戻ったらすべて解除

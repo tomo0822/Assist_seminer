@@ -121,7 +121,7 @@
 
 .c-card03__text {
   display: block;
-  width: calc(310 / 345 * 100%);
+  width: 94%;
   font-size: myrem(16);
   line-height: calc(25 / 16);
   letter-spacing: -.03em;
@@ -134,7 +134,6 @@
 }
 
 .c-card03:not(:first-child) .c-card03__content .c-card03__text {
-  width: 94%;
   margin-top: myrem(10);
   @include mq(md) {
     width: calc(573 / 800 * 100%);
