@@ -92,7 +92,6 @@
   font-weight: 700;
   display: flex;
   align-items: center;
-  // flex: 1;
   @include mq(md) {
     font-size: myrem(20);
     letter-spacing: .02em;
@@ -106,13 +105,11 @@
   line-height: calc(20 / 14);
   display: flex;
   align-items: center;
-  // flex: 1;
   margin-left: myrem(-4);
   padding-right: myrem(15);
   @include mq(md) {
     font-size: myrem(16);
     line-height: calc(26 / 16);
-    width: calc(502 / 521 * 100%);
     margin-left: 0;
     padding-right: 0;
   }
